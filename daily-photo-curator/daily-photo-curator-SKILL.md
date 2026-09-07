@@ -1,77 +1,79 @@
 ---
 name: daily-photo-curator
-description: 快速策展并交付一组主题统一的 9 张真实摄影作品，包含预览、作品页、原图下载链接与可下载 ZIP。适用于“找图片”“每日摄影灵感”“找一组摄影作品”等请求。
+description: Quickly curate and deliver a cohesive set of 9 real photographs, including previews, original work pages, original-image download links, and a downloadable ZIP. Use for requests such as “find images,” “daily photography inspiration,” or “find a set of photographs.”
 ---
 
 # Daily Photo Curator
 
-## 目标
+## Goal
 
-每次调用直接完成一组可查看、可追溯、可下载的摄影作品。默认交付 **9 张真实摄影作品**，画面好看、主题统一，并生成包含图片和版权说明的 ZIP。
+Complete one viewable, traceable, and downloadable photography collection per invocation. By default, deliver **9 real photographs** that are visually strong and thematically cohesive, plus a ZIP containing the images and copyright/source information.
 
-默认使用简体中文；用户指定其他语言时跟随用户。
+Use Simplified Chinese by default for user-facing output. Follow another language when the user explicitly requests it.
 
-## 执行原则
+## Operating Principles
 
-- 快速完成，不展示搜索过程或分析过程。
-- 图片本身优先：只保留第一眼有吸引力、构图和光线成立、值得保存的作品。
-- 一组图片须共享一个明确主题，并在主体、色彩、光线、氛围、构图语言中至少共享两项；九张之间保留视角、景别或画面内容变化，避免重复镜头。
-- 不使用 AI 生成图、相似图替代图、猜测的作者信息、猜测的作品页或猜测的下载链接。
-- 用户已给定主题、色彩、风格、主体或平台时，优先遵守；未给定时自行选择一个适合组成九图系列的方向。
+- Complete the task quickly. Do not show the search process or analysis process.
+- Prioritize the photographs themselves: retain only images with immediate visual appeal, sound composition and lighting, and clear save-worthy value.
+- The collection must have one clear theme. The nine images must share at least two of the following: subject, colour, light, atmosphere, or compositional language. Preserve variation in viewpoint, shot scale, or scene content, and avoid repetitive frames.
+- Do not use AI-generated images, similar-image substitutes, guessed creator information, guessed work pages, or guessed download links.
+- Follow a user-provided theme, colour direction, style, subject, or platform first. When no direction is provided, choose one that can form a strong nine-image series.
 
-## 选图与来源
+## Selection and Sources
 
-1. 优先从下载稳定、作者与作品页完整的平台选图；默认优先 Pexels，必要时再补充 Unsplash 或其他可靠来源。
-2. 快速浏览约 12–18 张候选作品，选出最强且最统一的 9 张。无需强制跨平台，不要求多轮搜索、基准图、审美 DNA、候选淘汰报告或分项打分。
-3. 每张最终图片必须有：作者、作品页面、该作品对应的官方下载入口。页面信息和下载入口必须指向同一张图片。
-4. 只显示一个总分（100 分制）；分数用于表达相对质量，不提供分项评分。
+1. Prefer platforms with reliable downloads and complete creator and work-page information. Use Pexels by default; add Unsplash or another reliable source only when needed.
+2. Quickly review approximately 12–18 candidate works and select the strongest, most cohesive 9. Do not require cross-platform coverage, multiple search rounds, a benchmark image, aesthetic-DNA analysis, a rejected-candidate report, or category-by-category scoring.
+3. Every final image must have a creator, an original work page, and an official download entry for that exact work. The page information and download entry must refer to the same photograph.
+4. Display one overall score only, on a 100-point scale. Use it to express relative quality; do not provide sub-scores.
 
-## 下载、命名与打包
+## Downloading, Naming, and Packaging
 
-1. 从已核验的官方下载入口下载最终 9 张图。下载后确认文件存在、大小非零且可被识别为图片。
-2. 文件夹名称：`每日精选摄影_YYYY-MM-DD_主题概括`
-3. 图片名称：`01_中文作品名.jpg` 至 `09_中文作品名.jpg`。保留实际文件格式；若下载文件格式与扩展名不一致，以真实格式命名。
-4. 生成 `作品来源与署名.txt`，内容包含：系列标题、主题、日期、每张图片的文件名、中文名称、原作品名、作者、来源平台、作品链接、原图下载链接、许可提示、总分。
-5. 将 9 张图与 TXT 打包为同名 ZIP：`每日精选摄影_YYYY-MM-DD_主题概括.zip`。
-6. 打包前确认文件夹内恰有 9 张图片和 1 个 TXT；打包后确认 ZIP 可打开、内容完整、中文文件名可读。
-7. 下载失败时，优先用同一主题的其他候选图替换。若当前环境确实无法完成完整下载和 ZIP，必须如实说明，并仍交付 9 张预览、作品页和官方下载链接；不得虚构 ZIP。
+1. Download the final 9 images from verified official download entries. Confirm that every file exists, is non-empty, and is identifiable as an image.
+2. Name the collection folder: `每日精选摄影_YYYY-MM-DD_主题概括`
+3. Name the images from `01_中文作品名.jpg` to `09_中文作品名.jpg`. Preserve the actual file format; if the downloaded format differs from its extension, rename it using the real format.
+4. Create `作品来源与署名.txt`. Include the series title, theme, date, and for every image: filename, Chinese display title, original title, creator, source platform, work page, original-image download link, licence note, and overall score.
+5. Package the 9 images and TXT into a ZIP with the same name as the folder: `每日精选摄影_YYYY-MM-DD_主题概括.zip`.
+6. Before packaging, confirm that the folder contains exactly 9 images and 1 TXT file. After packaging, confirm that the ZIP opens correctly, contains all required files, and preserves readable Chinese filenames.
+7. When an image download fails, replace it with another candidate that fits the same theme. If the environment genuinely cannot complete all downloads and create the ZIP, state this accurately and still deliver 9 previews, work pages, and official download links. Never fabricate a ZIP.
 
-## 最终输出
+## Final Output
 
-按以下顺序直接交付：
+Deliver the result directly in this order:
 
 ```markdown
 《系列标题》
-（标题需要抽象或富有诗意，美感，可以是根据图片主题联想到的古今中外诗句）
-1–3 句与标题有关或者从联想上相关的抽象且富有诗意的简短、自然、有画面感的文案。
+
+The title should be abstract, poetic, and visually appealing. It may draw inspiration from poetic associations from any culture. Only present a line as a quotation when its source is verified.
+
+Write 1–3 short, natural, abstract, poetic, and visually evocative sentences related to the title or its associations.
 
 当期主题：……（简洁概括）
 
-[按 01–09 顺序展示九张真实预览图]
+[Display the 9 real image previews in 01–09 order]
 
-01_中文作品名.jpg｜XX分｜作者｜来源平台
-简介：一句话说明画面与其在系列中的作用。
-作品链接：[打开作品页](…)
+01_中文作品名.jpg｜XX分｜Creator｜Source Platform  
+简介：One sentence describing the image and its role in the collection.  
+作品链接：[打开作品页](…)  
 下载链接：[下载原图](…)
 
 ……
 
-09_中文作品名.jpg｜XX分｜作者｜来源平台
-简介：……
-作品链接：[打开作品页](…)
+09_中文作品名.jpg｜XX分｜Creator｜Source Platform  
+简介：……  
+作品链接：[打开作品页](…)  
 下载链接：[下载原图](…)
 
 素材包下载：[同名 ZIP]
 ```
 
-标题应简短、有画面感，避免直接使用“城市摄影”“动物摄影”等分类名。每张简介只写一句，不写额外字段。
+Keep the title concise and image-led. Avoid category labels such as “City Photography” or “Animal Photography.” Write only one sentence for each image description and do not add extra fields.
 
-## 完成标准
+## Completion Standard
 
-只有同时满足以下条件才视为完整交付：
+A run is complete only when all of the following are present:
 
-- 有标题、文案、主题和 9 张预览图；
-- 恰有 9 张主题统一、质量合格的真实摄影作品；
-- 每张均有名称、总分、作者、简介、作品链接和原图下载链接；
-- 已下载并打包为 ZIP，ZIP 内含 9 张图片与 `作品来源与署名.txt`；
-- 文件夹、图片和 ZIP 命名一致。
+- A title, poetic copy, theme, and 9 image previews;
+- Exactly 9 real photographs of consistent theme and sufficient quality;
+- For every image: name, overall score, creator, description, work page, and original-image download link;
+- A downloaded and packaged ZIP containing 9 images and `作品来源与署名.txt`;
+- Consistent naming across the collection folder, images, and ZIP.
