@@ -1,0 +1,4 @@
+interface:
+  display_name: "Daily Photo Curator"
+  short_description: "Curate 9 exceptional photos with verified sources"
+  default_prompt: "使用 $daily-photo-curator 帮我找图片，自动选择主题并按当前环境支持的最高规格交付一组9张摄影作品。"
