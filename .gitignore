@@ -1,0 +1,91 @@
+# ----------------------------------------
+# Daily Photo Curator
+# Git ignore rules
+# ----------------------------------------
+
+# Generated photography packages
+每日精选摄影_*/
+每日精选摄影_*.zip
+
+# Generated attribution files outside examples
+作品来源与署名.txt
+
+# Downloaded images
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.tif
+*.tiff
+
+# Keep repository documentation assets if added later
+!assets/
+!assets/**
+!examples/
+!examples/**
+
+# Temporary download folders
+downloads/
+tmp/
+temp/
+cache/
+
+# Logs
+*.log
+logs/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node dependencies
+node_modules/
+
+# Environment and secret files
+.env
+.env.*
+*.key
+*.pem
+
+# IDE files
+.vscode/
+.idea/
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux / editor temporary files
+*~
+*.swp
+*.swo
+
+# Archives created during testing
+*.rar
+*.7z
+*.tar
+*.tar.gz
+
+# Temporary ZIP files
+*.zip
+
+# Allow intentionally committed example/package archives if added later
+!examples/**/*.zip
