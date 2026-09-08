@@ -68,7 +68,11 @@ After selecting a mode, follow exactly one contract for the entire run. Use the 
 
 For both modes, name image files from `01_中文作品名` through `09_中文作品名` and preserve the actual downloaded file extension.
 
-## Photography Mode: Visual Quality and Cohesion
+## Photography Mode: Selection Logic
+
+Use Photography Mode when the user requests real photographs, photography inspiration, a photography subject, or a cohesive visual photo series.
+
+### Photography Visual Quality and Cohesion
 
 1. Choose one primary visual rule for the collection, such as one subject category, dominant colour system, lighting condition, photographic mood, or compositional language.
 
@@ -85,6 +89,27 @@ For both modes, name image files from `01_中文作品名` through `09_中文作
 7. When the primary visual rule is a subject category, keep that subject category consistent across all nine images.
 
 8. When image quality is comparable, prefer works from the same photographer or project if this strengthens cohesion without creating repetitive images.
+
+### Photography Quality Standard
+
+Assess each candidate internally using the following criteria:
+
+1. Subject and visual focus:
+   The image has a clear visual centre, an intentional subject relationship, or a compelling use of emptiness. The viewer can immediately understand where attention should go.
+
+2. Composition and spatial control:
+   Framing, scale, balance, depth, perspective, line, rhythm, and negative space create a deliberate visual structure. Avoid accidental cropping, cluttered backgrounds, weak horizons, and unfocused compositions.
+
+3. Light, colour, and atmosphere:
+   Light and colour support the image’s mood and subject. Retain works with expressive natural light, controlled contrast, meaningful tonal relationships, or a deliberate atmospheric treatment.
+
+4. Technical and viewing quality:
+   The downloaded image is clear and sufficiently detailed for viewing and saving. Avoid visible compression damage, severe blur, intrusive watermarks, poor exposure, broken colour, or other unintentional technical defects.
+
+5. Distinctiveness and emotional value:
+   The image offers a memorable visual moment, atmosphere, observation, or perspective. Avoid generic stock-like scenes unless the composition or light gives the work clear artistic value.
+
+Use these criteria as a quick quality gate. Do not display sub-scores, internal classifications, or candidate comparisons. Give one overall score only, normally at least 85/100.
 
 ## Poster Mode: Selection Logic
 
@@ -110,7 +135,7 @@ Use this sub-mode when the user specifies a poster direction, such as acid poste
 - Avoid near-duplicate posters, repeated templates, and works from the same campaign.
 - Do not add unrelated poster styles merely to increase variety.
 
-## Poster Quality Standard
+### Poster Quality Standard
 
 In Poster Mode, select posters for professional design quality and transferable learning value.
 
