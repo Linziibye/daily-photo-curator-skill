@@ -1,7 +1,8 @@
 ---
 name: daily-photo-curator
-version: 1.1.0
 description: Curate and deliver a set of 9 real visual works for either cohesive photography inspiration or diverse poster-design research, including exact previews, original work pages, verified original-image download links, copyright/source information, and a downloadable ZIP. Use for requests such as “find photographs,” “daily photography inspiration,” “find posters,” “poster references,” or “graphic-design inspiration.”
+metadata:
+  version: "1.1.0"
 ---
 
 # Daily Photo Curator
