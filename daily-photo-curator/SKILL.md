@@ -146,6 +146,7 @@ Write 1–3 short, natural, abstract, poetic, and visually evocative sentences r
 当期主题：……（简洁概括）
 
 [按 01–09 顺序展示九张真实预览图]
+（Each final photograph must be visibly previewed in the final response. Prefer displaying the downloaded local image through the conversation’s image-display capability; do not rely solely on external image URLs in Markdown as previews. If image display is unavailable, state this clearly and still provide the work page, original-image download link, and ZIP file.）
 
 01_中文作品名.jpg｜XX分｜作者｜来源平台  
 简介：一句话说明画面及其在系列中的作用。  
