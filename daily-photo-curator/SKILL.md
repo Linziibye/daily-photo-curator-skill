@@ -139,9 +139,9 @@ If the current environment genuinely cannot complete all downloads and create a 
 Deliver the result directly in this order:
 
 ```markdown
-《系列标题》(The title should be abstract, poetic, and visually appealing. It may draw inspiration from poetic associations from any culture. Only present a line as a quotation when its source is verified.)
+《系列标题》（标题应抽象、富有诗意且有画面感。可从图片主题联想到古今中外的诗歌意象）
 
-Write 1–3 short, natural, abstract, poetic, and visually evocative sentences related to the title or its associations.
+系列文案：Write 1–3 short, natural, abstract, poetic, and visually evocative sentences related to the title or its associations.
 
 当期主题：……（简洁概括）
 
@@ -161,6 +161,7 @@ Write 1–3 short, natural, abstract, poetic, and visually evocative sentences r
 下载链接：[下载原图](…)
 
 素材包下载：[同名 ZIP]
+交付校验：（是否检查历史素材包，有无发现超过 15 天且符合命名规则的 ZIP；本期 ZIP 是否验证打开，是否含 9 张 JPEG 与完整署名清单。）
 ```
 
 Keep the title concise and image-led. Avoid direct category labels such as “城市摄影” or “动物摄影”.
@@ -171,9 +172,11 @@ Write exactly one sentence for each image description. Do not add extra fields s
 
 A run is complete only when all of the following are present:
 
-- a poetic series title, short poetic copy, theme, and nine exact image previews;
+- The response contains one series title, one separate `系列文案` line, and one `当期主题` line and nine exact image previews;
 - exactly nine real, visually strong, thematically cohesive photographs;
 - for every image: filename, overall score, creator, source platform, one-sentence description, original work page, and original-image download link;
 - a downloaded and verified ZIP containing nine image files and `作品来源与署名.txt`;
 - consistent naming across the collection folder, images, TXT, and ZIP;
+- The `交付校验` paragraph appears after `素材包下载` and is the final paragraph of the response.
 - cleanup of eligible archives older than 15 full days when Library access is available.
+- If any required field is missing, complete it before sending the response.
