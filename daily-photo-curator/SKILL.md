@@ -1,5 +1,6 @@
 ---
 name: daily-photo-curator
+version: 1.0.1
 description: Quickly curate and deliver a cohesive set of 9 real photographs, including exact previews, original work pages, verified original-image download links, copyright/source information, and a downloadable ZIP. Use for requests such as “find images,” “daily photography inspiration,” or “find a set of photographs.”
 ---
 
