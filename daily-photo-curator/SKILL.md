@@ -262,7 +262,7 @@ Use the selected mode contract and deliver the result directly in this order:
 当期内容：摄影作品 / 海报灵感
 当期主题：……（简洁概括）
 
-[按 01–09 顺序展示九张真实预览图]
+[按 01–09 顺序展示九张真实预览图] (Each final photograph must be visibly previewed in the final response. Prefer displaying the downloaded local image through the conversation’s image-display capability; do not rely solely on external image URLs in Markdown as previews. If image display is unavailable, state this clearly and still provide the work page, original-image download link, and ZIP file. )
 
 01_中文作品名.扩展名｜XX分｜摄影师 / 设计者｜来源平台
 简介：一句话说明画面及其在摄影系列中的作用；或一句话说明海报的核心视觉创意及最值得学习的设计方法。
@@ -290,6 +290,8 @@ A run is complete only when all of the following are present:
 - a poetic series title, a separate `系列文案`, a content type, a theme, and nine exact image previews;
 - exactly nine real, visually strong works selected according to the active mode;
 - for every work: filename, overall score, creator or designer, source platform, one-sentence description, original work page, and original-image download link;
+- Exactly 9 locally downloaded final JPEG files were rendered as visible previews in this conversation.
+- Preview order, metadata order, and ZIP filenames match exactly.
 - a downloaded and verified ZIP containing nine image files and the correct source-record TXT file;
 - consistent naming across the collection folder, images, TXT, and ZIP;
 - archive cleanup of eligible files older than 15 full days when Library access is available;
