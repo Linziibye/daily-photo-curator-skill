@@ -48,7 +48,7 @@ Use Simplified Chinese for all user-facing output by default. Follow another lan
 
 1. Prefer platforms with reliable downloads and complete creator and work-page information. Use Pexels by default; add Unsplash or another reliable source only when needed.
 
-2. Quickly review approximately 12–18 candidate works and select the strongest, most cohesive nine. Do not require cross-platform coverage, multiple search rounds, benchmark-image analysis, aesthetic-DNA analysis, rejected-candidate reports, or category-by-category scoring.
+2. Quickly review approximately 12–18 candidate works and select the strongest, most cohesive nine.
 
 3. Every final image must have:
    - a verified creator;
