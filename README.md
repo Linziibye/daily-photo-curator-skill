@@ -30,6 +30,7 @@ Daily Photo Curator 主要用于日常摄影灵感收集和图片素材整理。
 8. 选出最终 9 张作品
 9. 核验作者、来源、作品页面、许可和下载入口
 10. 按统一格式整理输出
+11. 检查库内文件，自动删除15天以前的历史文件
 
 在连续使用时，Skill 可以结合可用的历史信息调整题材，增加不同摄影类别和视觉风格之间的轮换。
 
@@ -89,8 +90,6 @@ Skill 会自动选择主题并运行完整流程。
 - 系列艺术标题
 - 1–3 句简短文案
 - 当期主题
-- 实际搜索平台
-- 基准图
 - 核心审美 DNA
 
 ### 9 张摄影作品
@@ -103,13 +102,9 @@ Skill 会自动选择主题并运行完整流程。
 - 作者
 - 来源平台
 - 简短策展说明
-- 记忆点
-- 创意点
-- 不可替代点
 - 原作品页面
 - 原图下载入口
-- 许可信息
-
+  
 支持图片直接展示的 AI 环境会同时提供最终作品预览。
 
 ---
@@ -175,26 +170,6 @@ Skill 每次调用会生成一期完整摄影精选。
 作者名、平台名、原作品标题、许可证名称和链接会保留原始信息。
 
 用户指定其他语言时，Skill 会按照当次语言要求输出。
-
-## Skill 文件结构
-```text
-daily-photo-curator/
-├── SKILL.md
-├── agents/
-│   └── openai.yaml
-└── references/
-    ├── curation.md
-    ├── source-and-delivery.md
-    └── files-and-fallback.md
-```
-
-各文件负责：
-
-- `SKILL.md`：调用方式、执行流程、语言、能力适配和整体规则
-- `curation.md`：摄影筛选、评分、主题、基准图和审美 DNA
-- `source-and-delivery.md`：图片来源、作者、许可、下载入口和最终输出格式
-- `files-and-fallback.md`：图片下载、文件整理、ZIP 和能力适配
-- `agents/openai.yaml`：OpenAI 环境中的 Skill 展示信息
 
 ---
 
@@ -290,12 +265,8 @@ Each work can include:
 - Creator
 - Source platform
 - Curator note
-- Memory point
-- Creative point
-- Irreplaceable point
 - Original work page
 - Verified download entry
-- License information
 
 AI environments with image-rendering support can also display the final images directly.
 
